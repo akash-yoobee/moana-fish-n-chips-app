@@ -1,0 +1,26 @@
+{
+  "name": "moana-fish-n-chips-app",
+  "version": "1.0.0",
+  "description": "This project will be submitted as Assignment 1.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akash-yoobee/waipara-wines-site.git"
+  },
+  "keywords": [
+    "moana",
+    "fish",
+    "chips",
+    "app",
+    "assignment 1"
+  ],
+  "author": "Akash Sanyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akash-yoobee/waipara-wines-site/issues"
+  },
+  "homepage": "https://github.com/akash-yoobee/waipara-wines-site#readme"
+}
