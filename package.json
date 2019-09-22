@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akash-yoobee/waipara-wines-site.git"
+    "url": "git+https://github.com/moana-fish-n-chips-app.git"
   },
   "keywords": [
     "moana",
@@ -20,7 +20,7 @@
   "author": "Akash Sanyal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/akash-yoobee/waipara-wines-site/issues"
+    "url": "https://github.com/moana-fish-n-chips-app/issues"
   },
-  "homepage": "https://github.com/akash-yoobee/waipara-wines-site#readme"
+  "homepage": "https://github.com/moana-fish-n-chips-app#readme"
 }
