@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Moana Fish & Chips</title>
-    <link rel="stylesheet" href="dist/css/app.min.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link
       type="text/css"
       rel="stylesheet"
       href="./vendors/materialize.min.css"
       media="screen,projection"
     />
+        <link rel="stylesheet" href="dist/app.min.css" />
   </head>
 
   <body>
@@ -30,7 +34,8 @@
     <ul class="collapsible">
       <li>
         <div class="collapsible-header active">
-          <i class="material-icons">filter_drama</i>Current Offers
+          <i class="material-icons blue-text text-darken-2">redeem</i>
+          Current Offers
         </div>
         <div class="collapsible-body">
           <div class="carousel">
@@ -52,16 +57,19 @@
           </div>
         </div>
       </li>
+
       <li>
-        <div class="collapsible-header">
-          <i class="material-icons">place</i>Burgers
-        </div>
-        <div class="collapsible-body"></div>
+          <div class="collapsible-header">
+              <i class="fas fa-hamburger blue-text text-darken-2"></i>Burgers
+          </div>
+          <div class="collapsible-body">
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
       </li>
 
       <li>
         <div class="collapsible-header">
-          <i class="material-icons">whatshot</i>Fish
+          <i class="fas fa-fish blue-text text-darken-2"></i>Fish
         </div>
         <div class="collapsible-body">
           <span>Lorem ipsum dolor sit amet.</span>
@@ -70,7 +78,7 @@
 
       <li>
         <div class="collapsible-header">
-          <i class="material-icons">whatshot</i>Chicken
+          <i class="fas fa-drumstick-bite blue-text text-darken-2"></i>Chicken
         </div>
         <div class="collapsible-body">
           <span>Lorem ipsum dolor sit amet.</span>
@@ -79,7 +87,7 @@
 
       <li>
         <div class="collapsible-header">
-          <i class="material-icons">whatshot</i>Sides & Sauces
+          <i class="material-icons blue-text text-darken-2">whatshot</i>Sides & Sauces
         </div>
         <div class="collapsible-body">
           <span>Lorem ipsum dolor sit amet.</span>
@@ -87,7 +95,15 @@
       </li>
       <li>
         <div class="collapsible-header">
-          <i class="material-icons">whatshot</i>Deserts
+          <i class="fas fa-birthday-cake blue-text text-darken-2"></i>Deserts
+        </div>
+        <div class="collapsible-body">
+          <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fas fa-coffee blue-text text-darken-2"></i>Drinks
         </div>
         <div class="collapsible-body">
           <span>Lorem ipsum dolor sit amet.</span>
@@ -104,11 +120,11 @@
 
     <!-- Modal Structure -->
     <div id="modal1" class="modal bottom-sheet">
-      <div class="modal-content blue darken-2">
+      <div class="modal-content blue lighten">
         <h4>Thank you for your order</h4>
         <p>Please pay at the counter</p>
       </div>
-      <div class="modal-footer blue lighten ">
+      <div class="modal-footer blue lighten">
         <a
           href="#!"
           class="modal-close waves-effect waves-green btn-flat white-text"
@@ -124,7 +140,7 @@
             <img src="./images/img8.jpg" />
             <span class="card-title">
               <a class="z-depth-4 cyan white-text">Beef Burger</a>
-              <a class="btn-floating btn-large z-depth-4 cyan white-text"
+              <a class="btn-floating btn-small z-depth-4 cyan white-text"
                 >$3.00</a
               >
             </span>

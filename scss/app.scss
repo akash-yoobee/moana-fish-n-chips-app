@@ -1,25 +1,37 @@
-// Files should be imported according to the folder they live in, one after the other in the following order:
+    .carousel {
+      height: 100px;
+    }
 
-// abstracts/ should not output a single line of CSS when compiled on its own. _variables.scss_mixins.scss_functions.scss_placeholders.scss
-// vendors/ CodePen and web snippets _normalize.scss_bootstrap.scss_jquery-ui.scss
-// base/ _base.scss_reset.scss_typography.scss
-// layout/ _grid.scss_header.scss_footer.scss_sidebar.scss_forms.scss_navigation.scss
-// components/ _media.scss_carousel.scss_thumbnails.scss
-// pages/ _home.scss_contact.scss
-// themes/ _theme.scss_admin.scss
+    .collapsible-body {
+      padding: 0rem;
+    }
 
-// abstracts
+    .carousel-item {
+      opacity: 1;
+    }
 
-// vendors
-// @import './vendors/materialize.scss';
+    // Files should be imported according to the folder they live in, one after the other in the following order:
 
-// base
-// @import './base/reset';
+    // abstracts/ should not output a single line of CSS when compiled on its own. _variables.scss_mixins.scss_functions.scss_placeholders.scss
+    // vendors/ CodePen and web snippets _normalize.scss_bootstrap.scss_jquery-ui.scss
+    // base/ _base.scss_reset.scss_typography.scss
+    // layout/ _grid.scss_header.scss_footer.scss_sidebar.scss_forms.scss_navigation.scss
+    // components/ _media.scss_carousel.scss_thumbnails.scss
+    // pages/ _home.scss_contact.scss
+    // themes/ _theme.scss_admin.scss
 
-// layout
+    // abstracts
 
-// components
+    // vendors
+    // @import './vendors/materialize.scss';
 
-// pages
+    // base
+    // @import './base/reset';
 
-// themes
+    // layout
+
+    // components
+
+    // pages
+
+    // themes

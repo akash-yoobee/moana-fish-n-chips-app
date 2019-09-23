@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/moana-fish-n-chips-app/issues"
   },
-  "homepage": "https://github.com/moana-fish-n-chips-app#readme"
+  "homepage": "https://github.com/moana-fish-n-chips-app#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.1"
+  }
 }
