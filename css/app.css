@@ -25,6 +25,10 @@
   font-style: normal;
 }
 
+.logo {
+  padding-left: 2rem;
+}
+
 .__logo-name {
   font-family: 'tribalcaseregular';
   font-size: 1.3rem;
@@ -32,7 +36,7 @@
 
 .__logo-description {
   font-family: 'quesha';
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .__menu-info-title {
