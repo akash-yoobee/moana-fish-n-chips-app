@@ -1,0 +1,16 @@
+// Locally stored fonts used to render this app.
+
+@font-face {
+  font-family: 'tribalcaseregular';
+  src: url('../../fonts/tribalcase-lblz-webfont.woff') format('woff'),
+       url('../../fonts/tribalcase-lblz-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quesha';
+  src: url('../../fonts/quesha.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}

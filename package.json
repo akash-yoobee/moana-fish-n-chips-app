@@ -23,7 +23,10 @@
     "url": "https://github.com/moana-fish-n-chips-app/issues"
   },
   "homepage": "https://github.com/moana-fish-n-chips-app#readme",
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.1"
-  }
+  // "devDependencies": {
+  //   "@fortawesome/fontawesome-free": "^5.11.1"
+  // },
+  // "dependencies": {
+  //   "materialize-css": "^1.0.0-rc.2"
+  // }
 }

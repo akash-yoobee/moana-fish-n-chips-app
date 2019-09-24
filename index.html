@@ -6,27 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Moana Fish & Chips</title>
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="./vendors/materialize.min.css"
-      media="screen,projection"
-    />
-        <link rel="stylesheet" href="dist/app.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous" />
+
+    <link type="text/css" rel="stylesheet" href="./vendors/materialize.min.css" />
+
+    <link rel="stylesheet" href="dist/app.min.css" />
   </head>
 
   <body>
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper blue darken-2">
-          <a href="#!" class="brand-logo center">Moana Fish & Chips</a>
+          <a href="#!" class="brand-logo center"><span class="__logo-name">Moana</span>
+            <span class="__logo-description"> Fish & Chips</span></a>
         </div>
       </nav>
     </div>
@@ -34,33 +28,32 @@
     <ul class="collapsible">
       <li>
         <div class="collapsible-header active">
-          <i class="material-icons blue-text text-darken-2">redeem</i>
-          Current Offers
+          <i class="material-icons blue-text text-darken-2">redeem</i> Current Offers
         </div>
         <div class="collapsible-body">
           <div class="carousel">
             <a class="carousel-item" href="#one!">
               <img src="./images/img1.jpg" />
             </a>
-            <a class="carousel-item" href="#two!"
-              ><img src="./images/img2.jpg"
-            /></a>
-            <a class="carousel-item" href="#three!"
-              ><img src="./images/img3.jpg"
-            /></a>
-            <a class="carousel-item" href="#four!"
-              ><img src="./images/img4.jpg"
-            /></a>
-            <a class="carousel-item" href="#five!"
-              ><img src="./images/img5.jpg"
-            /></a>
+            <a class="carousel-item" href="#two!">
+              <img src="./images/img2.jpg" />
+            </a>
+            <a class="carousel-item" href="#three!">
+              <img src="./images/img3.jpg" />
+            </a>
+            <a class="carousel-item" href="#four!">
+              <img src="./images/img4.jpg" />
+            </a>
+            <a class="carousel-item" href="#five!">
+              <img src="./images/img5.jpg" />
+            </a>
           </div>
         </div>
       </li>
 
       <li>
           <div class="collapsible-header">
-              <i class="fas fa-hamburger blue-text text-darken-2"></i>Burgers
+              <i class="fas fa-hamburger blue-text text-darken-2"></i> Burgers
           </div>
           <div class="collapsible-body">
             <span>Lorem ipsum dolor sit amet.</span>
@@ -69,7 +62,7 @@
 
       <li>
         <div class="collapsible-header">
-          <i class="fas fa-fish blue-text text-darken-2"></i>Fish
+          <i class="fas fa-fish blue-text text-darken-2"></i> Fish
         </div>
         <div class="collapsible-body">
           <span>Lorem ipsum dolor sit amet.</span>
@@ -78,7 +71,7 @@
 
       <li>
         <div class="collapsible-header">
-          <i class="fas fa-drumstick-bite blue-text text-darken-2"></i>Chicken
+          <i class="fas fa-drumstick-bite blue-text text-darken-2"></i> Chicken
         </div>
         <div class="collapsible-body">
           <span>Lorem ipsum dolor sit amet.</span>
@@ -87,7 +80,7 @@
 
       <li>
         <div class="collapsible-header">
-          <i class="material-icons blue-text text-darken-2">whatshot</i>Sides & Sauces
+          <i class="material-icons blue-text text-darken-2">whatshot</i> Sides & Sauces
         </div>
         <div class="collapsible-body">
           <span>Lorem ipsum dolor sit amet.</span>
@@ -95,7 +88,7 @@
       </li>
       <li>
         <div class="collapsible-header">
-          <i class="fas fa-birthday-cake blue-text text-darken-2"></i>Deserts
+          <i class="fas fa-birthday-cake blue-text text-darken-2"></i> Deserts
         </div>
         <div class="collapsible-body">
           <span>Lorem ipsum dolor sit amet.</span>
@@ -103,7 +96,7 @@
       </li>
       <li>
         <div class="collapsible-header">
-          <i class="fas fa-coffee blue-text text-darken-2"></i>Drinks
+          <i class="fas fa-coffee fa-flip-horizontal blue-text text-darken-2"></i> Drinks
         </div>
         <div class="collapsible-body">
           <span>Lorem ipsum dolor sit amet.</span>
@@ -111,101 +104,187 @@
       </li>
     </ul>
 
-    <!-- Modal Trigger -->
-    <a
-      class="waves-effect waves-light btn modal-trigger blue darken-2"
-      href="#modal1"
-      >Check Out</a
-    >
-
-    <!-- Modal Structure -->
+    <!-- Modal trigger -->
+    <a class="waves-effect waves-light btn modal-trigger blue darken-2" href="#modal1"><i class="material-icons left">shopping_cart</i>Check Out</a></a>
+    <!-- Modal pop-up info. -->
     <div id="modal1" class="modal bottom-sheet">
       <div class="modal-content blue lighten">
-        <h4>Thank you for your order</h4>
-        <p>Please pay at the counter</p>
+        <h4 class="white-text center-align pulse">Please pay at the counter</h4>
       </div>
       <div class="modal-footer blue lighten">
-        <a
-          href="#!"
-          class="modal-close waves-effect waves-green btn-flat white-text"
-          >OK</a
-        >
+        <a href="#!" class="modal-close waves-effect btn blue darken-2 white-text pulse"><i class="material-icons left">attach_money</i>OK</a>
       </div>
     </div>
+
     <div class="row">
       <div class="col s12 m3">
-        <!-- CARD REVEAL -->
+        <!-- Card with info. that slides up -->
         <div class="card small">
           <div class="card-image">
             <img src="./images/img8.jpg" />
-            <span class="card-title">
-              <a class="z-depth-4 cyan white-text">Beef Burger</a>
-              <a class="btn-floating btn-small z-depth-4 cyan white-text"
-                >$3.00</a
-              >
-            </span>
           </div>
+          <span class="card-title flow-text">
+            <a class="black-text">Beef Burger</a>
+            <a class="btn-floating btn-large z-depth-4 blue darken-2 white-text right">$3.00</a>
+            <div class="clearfix"></div>
+          </span>
           <div class="card-content">
-            <!-- <span class="card-title">
-              This burger made from grass fed cows.
-            </span> -->
+            <!-- Clicking here will slide up some info. -->
             <div class="card-action row">
               <span class="card-title activator">Nutrition & Allergens</span>
             </div>
           </div>
-          <!-- inside of reveal -->
+          <!-- Inside the info. that slid up -->
           <div class="card-reveal">
-            <span class="card-title flow-text"
-              >Beef Burger
-              <i class="material-icons">close</i>
-            </span>
+            <span class="__menu-info-title card-title flow-text">Beef Burger<i class="material-icons">close</i></span>
+            <!-- Nutrition info. -->
             <p class="flow-text">
-                <table class="striped">
-                    <thead>
-                      <tr>
-                          <th>Name</th>
-                          <th>Item Name</th>
-                          <th>Item Price</th>
-                      </tr>
-                    </thead>
-            
-                    <tbody>
-                      <tr>
-                        <td>Alvin</td>
-                        <td>Eclair</td>
-                        <td>$0.87</td>
-                      </tr>
-                      <tr>
-                        <td>Alan</td>
-                        <td>Jellybean</td>
-                        <td>$3.76</td>
-                      </tr>
-                      <tr>
-                        <td>Jonathan</td>
-                        <td>Lollipop</td>
-                        <td>$7.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <table class="striped responsive-table">
+                <thead>
+                  <tr>
+                      <th></th>
+                      <th>Quantity per Serve</th>
+                      <th>Quantity per 100 grams</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Energy (kJ)</td>
+                    <td>3500</td>
+                    <td>1040</td>
+                  </tr>
+                  <tr>
+                    <td>Energy (Cal)</td>
+                    <td>837</td>
+                    <td>249</td>
+                  </tr>
+                  <tr>
+                    <td>Protein (g)</td>
+                    <td>53.5</td>
+                    <td>15.9</td>
+                  </tr>
+                  <tr>
+                    <td>Total Fat (g)</td>
+                    <td>52.2</td>
+                    <td>15.5</td>
+                  </tr>
+                  <tr>
+                    <td>Saturated Fat (g)</td>
+                    <td>23.6</td>
+                    <td>7.0</td>
+                  </tr>
+                  <tr>
+                    <td>Carbohydrate (g)</td>
+                    <td>37.6</td>
+                    <td>11.2</td>
+                  </tr>
+                  <tr>
+                    <td>Sugars (g)</td>
+                    <td>8.5</td>
+                    <td>2.5</td>
+                  </tr>
+                  <tr>
+                    <td>Sodium (mg)</td>
+                    <td>1150</td>
+                    <td>342</td>
+                  </tr>
+                </tbody>
+              </table>
+            </p>
+            <!-- Allergen info. -->
+            <p class="flow-text">
+                <table class="striped responsive-table">
+                  <thead>
+                    <tr>
+                        <th>Allergen</th>
+                        <th>Yes or No</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Gluten</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Egg</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Milk</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Soy</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Fish & Crustaceans</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Peanuts</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Nuts</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Sesame Seeds</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Sulphites</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Preservatives</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Flavours</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Colors</td>
+                      <td>Y</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </p>
+            <p class="flow-text green-text">
+              Please be aware that there is always a risk that traces of allergens may be transferred to items on our menu during processing, storage or preparation in our kitchen.
+              
+              Moana Fish & Chips is therefore unable to guarantee that any item sold is free from traces of allergens.
             </p>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="fixed-action-btn toolbar">
+        <a class="btn-floating btn-large blue darken-2">
+          <i class="large material-icons">menu</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+
     <script src="js/app.js"></script>
     <!--Import jQuery before materialize.js-->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-    ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
     <script src="js/materialize.min.js"></script>
     <!-- put the JS below in "js/app.js" before handing this to Richard -->
     <script>
       $(document).ready(function() {
-        $(".carousel").carousel({ dist: 0 });
-        $(".modal").modal();
+        $(".carousel").carousel({dist: 0 });
+        $(".modal").modal({dismissible: false });
         $(".collapsible").collapsible();
+        $('.fixed-action-btn').floatingActionButton({toolbarEnabled: true});
       });
     </script>
   </body>

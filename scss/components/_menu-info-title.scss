@@ -1,0 +1,10 @@
+// There was too much nutrition & allergen info. to scroll through. 
+// I am making the button to close this info. card fixed on top.
+
+.__menu-info-title {
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
