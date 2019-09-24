@@ -11,6 +11,10 @@
   padding-top: 0px;
 }
 
+.card .card-action {
+  border-top: 0px;
+}
+
 @font-face {
   font-family: 'tribalcaseregular';
   src: url("../../fonts/tribalcase-lblz-webfont.woff") format("woff"), url("../../fonts/tribalcase-lblz-webfont.woff2") format("woff2");

@@ -1,6 +1,6 @@
 .carousel {
   height: 133px;
-  top: 15px;
+  top: 10px;
 }
 
 .collapsible-body {
@@ -9,4 +9,8 @@
 
 .card .card-reveal {
   padding-top: 0px;
+}
+
+.card .card-action {
+  border-top: 0px;
 }
