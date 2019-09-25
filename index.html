@@ -19,8 +19,8 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper blue darken-2">
-          <a href="#!" class="brand-logo left"><span class="logo __logo-name">Moana</span>
-            <span class="__logo-description"> Fish & Chips</span></a>
+          <a href="#!" class="brand-logo logo left"><span class="logo__name">Moana</span>
+            <span class="logo__description"> Fish & Chips</span></a>
         </div>
       </nav>
     </div>
@@ -112,7 +112,7 @@
     <!-- Modal pop-up info. -->
     <div id="modal1" class="modal bottom-sheet">
       <div class="modal-content blue lighten">
-        <h4 class="white-text center-align pulse">Please pay at the counter</h4>
+        <h5 class="white-text center-align pulse">Please pay at the counter</h5>
       </div>
       <div class="modal-footer blue lighten">
         <a href="#!" class="modal-close waves-effect btn blue darken-2 white-text pulse"><i class="material-icons left">attach_money</i>OK</a>
@@ -127,7 +127,7 @@
             <img src="./images/img8.jpg" />
           </div>
           <span class="card-title flow-text">
-            <a class="black-text">Beef Burger</a>
+            <a class="black-text __food-name">Beef Burger</a>
             <a class="btn-floating btn-large z-depth-4 blue darken-2 white-text right">$3.00</a>
             <div class="clearfix"></div>
           </span>
@@ -275,18 +275,19 @@
         </ul>
     </div>
 
-    <script src="js/app.js"></script>
+
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
     <script src="js/materialize.min.js"></script>
     <!-- put the JS below in "js/app.js" before handing this to Richard -->
-    <script>
+    <script src="js/app.js"></script>
+    <!-- <script>
       $(document).ready(function() {
         $(".carousel").carousel({dist: 0 });
         $(".modal").modal({dismissible: false });
         $(".collapsible").collapsible();
         $('.fixed-action-btn').floatingActionButton({toolbarEnabled: true});
       });
-    </script>
+    </script> -->
   </body>
 </html>

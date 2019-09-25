@@ -29,18 +29,34 @@
   font-style: normal;
 }
 
+.__food-name {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0rem 0rem 0rem 1rem;
+  color: #fff;
+  border: 2px solid #1976d2;
+  line-height: 4;
+  border-radius: 12px/28px;
+  font-weight: 500;
+}
+
+.__food-name:hover {
+  background: #1976d2;
+  color: #fff !important;
+}
+
 .logo {
   padding-left: 2rem;
 }
 
-.__logo-name {
+.logo__name {
   font-family: 'tribalcaseregular';
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
-.__logo-description {
+.logo__description {
   font-family: 'quesha';
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .__menu-info-title {
