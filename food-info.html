@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Moana Fish & Chips</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous" />
+
+    <link type="text/css" rel="stylesheet" href="./vendors/materialize.min.css" />
+
+    <link rel="stylesheet" href="dist/app.min.css" />
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper blue darken-2">
+          <a href="#!" class="brand-logo logo left"><span class="logo__name">Moana</span>
+            <span class="logo__description"> Fish & Chips</span></a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <!-- Card with info. that slides up -->
+        <div class="card small food-card">
+          <div class="card-image food-card__face">
+            <div class="food-card__face__image"></div>
+            <!-- <img class="food-card__face__image" src="./images/burger3-2.png" width="450" height="300"/> -->
+            <span class="card-title flow-text food-card__face__image__description">
+              <a class="z-depth-4 food-card__face__image__description__name">Beef Burger</a>
+              <!-- <a class="btn-floating btn-large z-depth-4 blue darken-2 white-text food-card__face__image__description__price">$3.00</a> -->
+              <a class="z-depth-4 blue darken-2 white-text food-card__face__image__description__price">$3.00</a>
+              <div class="clearfix"></div>
+            </span>
+          </div>
+
+          <div class="card-content">
+            <!-- Clicking here will slide up some info. -->
+            <div class="card-action row">
+              <span class="card-title activator">Nutrition & Allergens</span>
+            </div>
+          </div>
+          <!-- Inside the info. that slid up -->
+          <div class="card-reveal">
+            <span class="__menu-info-title card-title flow-text">Beef Burger<i class="material-icons">close</i></span>
+            <!-- Nutrition info. -->
+            <p class="flow-text">
+              <table class="striped responsive-table">
+                <thead>
+                  <tr>
+                      <th></th>
+                      <th>Per serve</th>
+                      <th>Per 100 grams</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Energy (kJ)</td>
+                    <td>3500</td>
+                    <td>1040</td>
+                  </tr>
+                  <tr>
+                    <td>Energy (Cal)</td>
+                    <td>837</td>
+                    <td>249</td>
+                  </tr>
+                  <tr>
+                    <td>Protein (g)</td>
+                    <td>53.5</td>
+                    <td>15.9</td>
+                  </tr>
+                  <tr>
+                    <td>Total Fat (g)</td>
+                    <td>52.2</td>
+                    <td>15.5</td>
+                  </tr>
+                  <tr>
+                    <td>Saturated Fat (g)</td>
+                    <td>23.6</td>
+                    <td>7.0</td>
+                  </tr>
+                  <tr>
+                    <td>Carbohydrate (g)</td>
+                    <td>37.6</td>
+                    <td>11.2</td>
+                  </tr>
+                  <tr>
+                    <td>Sugars (g)</td>
+                    <td>8.5</td>
+                    <td>2.5</td>
+                  </tr>
+                  <tr>
+                    <td>Sodium (mg)</td>
+                    <td>1150</td>
+                    <td>342</td>
+                  </tr>
+                </tbody>
+              </table>
+            </p>
+            <!-- Allergen info. -->
+            <p class="flow-text">
+                <table class="striped responsive-table">
+                  <thead>
+                    <tr>
+                        <th>Allergen</th>
+                        <th>Yes or No</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Gluten</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Egg</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Milk</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Soy</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Fish & Crustaceans</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Peanuts</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Nuts</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Sesame Seeds</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Sulphites</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Preservatives</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Flavours</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Colors</td>
+                      <td>Y</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </p>
+            <p class="flow-text green-text">
+              Moana Fish & Chips is unable to guarantee that any item sold is free from traces of allergens.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal trigger -->
+    <a class="waves-effect waves-light btn modal-trigger blue darken-2" href="#modal1"><i class="material-icons left">shopping_cart</i>Check Out</a>
+    <!-- Modal pop-up info. -->
+    <div id="modal1" class="modal bottom-sheet">
+      <div class="modal-content blue lighten">
+        <h5 class="white-text center-align pulse">Please pay at the counter</h5>
+      </div>
+      <div class="modal-footer blue lighten">
+        <a href="#!" class="modal-close waves-effect btn blue darken-2 white-text pulse"><i class="material-icons left">attach_money</i>OK</a>
+      </div>
+    </div>
+    
+    <div class="fixed-action-btn toolbar">
+        <a class="btn-floating btn-large blue darken-2">
+          <i class="large material-icons">menu</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <script src="js/materialize.min.js"></script>
+    <!-- put the JS below in "js/app.js" before handing this to Richard -->
+    <script src="js/app.js"></script>
+    <!-- <script>
+      $(document).ready(function() {
+        $(".carousel").carousel({dist: 0 });
+        $(".modal").modal({dismissible: false });
+        $(".collapsible").collapsible();
+        $('.fixed-action-btn').floatingActionButton({toolbarEnabled: true});
+      });
+    </script> -->
+  </body>
+</html>

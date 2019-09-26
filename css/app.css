@@ -15,6 +15,18 @@
   border-top: 0px;
 }
 
+.card .card-image .card-title {
+  padding: 0rem 0rem 0.4rem 0.5rem;
+}
+
+.card .card-content {
+  padding: 0px;
+}
+
+.card .card-action {
+  padding: 0px 24px;
+}
+
 @font-face {
   font-family: 'tribalcaseregular';
   src: url("../../fonts/tribalcase-lblz-webfont.woff") format("woff"), url("../../fonts/tribalcase-lblz-webfont.woff2") format("woff2");
@@ -29,20 +41,41 @@
   font-style: normal;
 }
 
-.__food-name {
-  font-size: 1rem;
-  padding: 0.5rem;
-  margin: 0rem 0rem 0rem 1rem;
-  color: #fff;
-  border: 2px solid #1976d2;
-  line-height: 4;
-  border-radius: 12px/28px;
-  font-weight: 500;
+.food-card__face__image {
+  width: 450px;
+  height: 300px;
+  background-size: contain;
+  background-image: url("../../images/burger3-3.png");
+  background-repeat: no-repeat;
 }
 
-.__food-name:hover {
+.food-card__face__image__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.food-card__face__image__description__name {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.9rem 0.8rem 0.4rem 0.8rem;
   background: #1976d2;
-  color: #fff !important;
+  color: #fff;
+  border-radius: 25px/25px;
+}
+
+.food-card__face__image__description__price {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.9rem 0.5rem 0.9rem 0.5rem;
+  margin: 0rem 0rem 0rem 16rem;
+  border-radius: 50px;
 }
 
 .logo {
