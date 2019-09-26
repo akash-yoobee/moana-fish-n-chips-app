@@ -19,11 +19,17 @@
   padding: 0rem 0rem 0.4rem 0.5rem;
 }
 
-.card .card-content {
-  padding: 0px;
-  // visibility: hidden;
+.row {
+    margin-bottom: 0px;
 }
 
-.card .card-action {
-  padding: 0px 24px;
+.card .card-title {
+  font-size: 2rem;
+  font-weight: 300;
+  // line-height: 0px;
+}
+
+.card .card-content .card-title {
+  line-height: 32px;
+  margin-bottom: 8px;
 }

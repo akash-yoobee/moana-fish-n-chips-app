@@ -19,12 +19,18 @@
   padding: 0rem 0rem 0.4rem 0.5rem;
 }
 
-.card .card-content {
-  padding: 0px;
+.row {
+  margin-bottom: 0px;
 }
 
-.card .card-action {
-  padding: 0px 24px;
+.card .card-title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.card .card-content .card-title {
+  line-height: 32px;
+  margin-bottom: 8px;
 }
 
 @font-face {
@@ -42,10 +48,10 @@
 }
 
 .food-card__face__image {
-  width: 450px;
-  height: 300px;
-  background-size: contain;
-  background-image: url("../../images/burger3-3.png");
+  width: 100%;
+  height: 450px;
+  background-size: 392px 360px;
+  background-image: url("../../images/burger-squished3.png");
   background-repeat: no-repeat;
 }
 
@@ -63,7 +69,7 @@
   font-size: 1rem;
   font-weight: 500;
   text-align: center;
-  padding: 0.9rem 0.8rem 0.4rem 0.8rem;
+  padding: 0.8rem 0.8rem 0.4rem 0.8rem;
   background: #1976d2;
   color: #fff;
   border-radius: 25px/25px;
@@ -73,9 +79,66 @@
   font-size: 1rem;
   font-weight: 500;
   text-align: center;
-  padding: 0.9rem 0.5rem 0.9rem 0.5rem;
+  padding: 0.9rem 0.4rem 0.9rem 0.4rem;
   margin: 0rem 0rem 0rem 16rem;
   border-radius: 50px;
+}
+
+.food-card__footer {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+}
+
+.qt, .qt-plus, .qt-minus {
+  display: block;
+  float: left;
+}
+
+.qt {
+  font-size: 19px;
+  line-height: 50px;
+  width: 70px;
+  text-align: center;
+}
+
+.qt-plus, .qt-minus {
+  background: #fcfcfc;
+  border: none;
+  font-size: 30px;
+  font-weight: 300;
+  height: 100%;
+  padding: 0 20px;
+  -webkit-transition: background .2s linear;
+  transition: background .2s linear;
+}
+
+.qt-plus:hover, .qt-minus:hover {
+  background: #53b5aa;
+  color: #fff;
+  cursor: pointer;
+}
+
+.qt-plus {
+  line-height: 50px;
+}
+
+.qt-minus {
+  line-height: 47px;
+}
+
+.full-price {
+  background: #53b5aa;
+  color: #fff;
+  float: right;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 49px;
+  margin: 0;
+  padding: 0 30px;
+  -webkit-transition: margin .15s linear;
+  transition: margin .15s linear;
 }
 
 .logo {
