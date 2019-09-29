@@ -1,6 +1,9 @@
+// All CSS style rulesets in this file override Materialize's default styling.
+
 .carousel {
-  height: 180px;
+  height: 200px;
   top: 0px;
+  // bottom: 0px;
 }
 
 .collapsible-body {
@@ -15,20 +18,20 @@
   border-top: 0px;
 }
 
+.card .card-image img {
+  height: -webkit-fill-available;
+  width: fit-content;
+}
 .card .card-image .card-title {
   padding: 0rem 0rem 0.4rem 0.5rem;
 }
 
-.row {
-  margin-bottom: 0px;
-}
-
 .card .card-title {
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .card .card-content .card-title {
-  line-height: 32px;
-  margin-bottom: 8px;
+  line-height: -1px;
+  margin-bottom: -10px;
 }
