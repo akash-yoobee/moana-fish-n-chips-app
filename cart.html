@@ -35,7 +35,13 @@
             <div id="total">Total</div>
           </div>
           <buyitem v-for="buyitem in buyitems" v-bind:buy_data="buyitem"></buyitem>
-          <h4 v-if="total()">Sum: $ {{total()}}</h4>
+          <span v-if="total()"><h4>Sum: $ {{total()}}</h4>
+            <!-- <h4 v-if="total()">Sum: $ {{total()}}</h4> -->
+            <!-- Checkout button -->
+            <!-- Modal trigger -->
+            <a class="waves-effect waves-light btn modal-trigger blue darken-2" href="#modal1">
+            <i class="material-icons left">shopping_cart</i>Check Out</a>
+          </span>
         </div>
       </div>
       
@@ -62,37 +68,16 @@
         </div>
       </template>
 
-    <div class="fixed-action-btn toolbar">
-        <a class="btn-floating btn-large blue darken-2">
-          <i class="large material-icons">menu</i>
-        </a>
-        <ul>
-          <li><a class="btn-floating"><i class="material-icons">insert_chart</i></a></li>
-          <li><a class="btn-floating"><i class="material-icons">format_quote</i></a></li>
-          <li><a class="btn-floating"><i class="material-icons">publish</i></a></li>
-          <li><a class="btn-floating"><i class="material-icons">attach_file</i></a></li>
-        </ul>
-    </div>
-    <!-- Checkout button -->
-    <!-- Modal trigger -->
-    <a
-      class="waves-effect waves-light btn modal-trigger blue darken-2"
-      href="#modal1"
-      ><i class="material-icons left">shopping_cart</i>Check Out</a
-    >
-    <!-- Modal pop-up info. -->
-    <div id="modal1" class="modal bottom-sheet">
-      <div class="modal-content blue lighten">
-        <h5 class="white-text center-align pulse">Please pay at the counter</h5>
+      <!-- Modal pop-up info. -->
+      <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content blue lighten">
+          <h5 class="white-text center-align pulse">Please pay at the counter</h5>
+        </div>
+        <div class="modal-footer blue lighten">
+          <a href="./wait.html" class="modal-close waves-effect btn blue darken-2 white-text pulse"><i class="material-icons left">attach_money</i>OK</a>
+        </div>
       </div>
-      <div class="modal-footer blue lighten">
-        <a
-          href="./wait.html"
-          class="modal-close waves-effect btn blue darken-2 white-text pulse"
-          ><i class="material-icons left">attach_money</i>OK</a
-        >
-      </div>
-    </div>
+
     <!-- Menu -->
     <div class="fixed-action-btn toolbar">
         <a class="btn-floating btn-large blue darken-2">

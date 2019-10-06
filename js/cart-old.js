@@ -1,4 +1,6 @@
 var beefClick = 0;
+var fishClick = 0;
+var drinkClick = 0;
 
 Vue.component("item", {
   template: "#product-box",
@@ -15,8 +17,26 @@ Vue.component("item", {
           this.$parent.buyitems[i].total = this.$parent.buyitems[i].qty*this.$parent.buyitems[i].price;
           console.log(i);
         }
-      } 
-      console.log(beefClick);
+      } else if (item_data.id == "fish-bag") {
+        fishClick += 1;
+        if (fishClick <= 1) {
+          this.pushData();
+        } else {
+          var i = this.findIndex(this.$parent.buyitems, "id", "fish-bag");
+          this.$parent.buyitems[i].qty += 1;
+          this.$parent.buyitems[i].total =this.$parent.buyitems[i].qty*this.$parent.buyitems[i].price;
+        }
+      } else {
+        drinkClick += 1;
+        if (drinkClick <= 1) {
+          this.pushData();
+        } else {
+          var i = this.findIndex(this.$parent.buyitems, "id", "drink-bag");
+          this.$parent.buyitems[i].qty += 1;
+          this.$parent.buyitems[i].total = this.$parent.buyitems[i].qty*this.$parent.buyitems[i].price;
+        }
+      }
+      console.log(beefClick, fishClick, drinkClick);
     },
     pushData: function() {
       this.$parent.buyitems.push({
@@ -47,7 +67,11 @@ Vue.component("buyitem", {
       this.$parent.buyitems.splice(index, 1);
       if (buy_data.id == "beef") {
         beefClick = 0;
-      } 
+      } else if (buy_data.id == "fish-bag") {
+        fishClick = 0;
+      } else {
+        drinkClick = 0;
+      }
     },
     plusQty: function(buy_data){
       buy_data.qty += 1;
@@ -74,6 +98,18 @@ var app = new Vue({
         price: "3",
         id: "beef"
       },
+      {
+        img: "./images/fish-cart.png",
+        title: "Fish",
+        price: "2.50",
+        id: "fish-bag"
+      },
+      {
+        img: "./images/drink-cart.png",
+        title: "Drink",
+        price: "2",
+        id: "drink-bag"
+      }
     ],
     buyitems: []
   },

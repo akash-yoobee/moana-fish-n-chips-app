@@ -63,7 +63,7 @@ html, body {
 #app #product .box i {
   width: 50px;
   height: 50px;
-  background: #ED277F;
+  background: #1976d2;
   color: #ffffff;
   border-radius: 25px;
   text-align: center;
@@ -215,13 +215,6 @@ html, body {
 }
 
 /* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 a {
   cursor: pointer;
   text-decoration: none;
@@ -350,7 +343,7 @@ ul.flip li a div div.inn {
   color: #ccc;
   text-shadow: 0 1px 2px #000;
   text-align: center;
-  background-color: #333;
+  background-color: #1976d2;
   border-radius: 6px;
 }
 
@@ -552,7 +545,7 @@ body.play ul li.active .down .shadow {
   font-weight: 500;
   text-align: center;
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
-  background: #1976d2;
+  background: 64b5f6;
   color: #fff;
   border-radius: 25px/25px;
 }
