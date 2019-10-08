@@ -1,3 +1,7 @@
+nav .brand-logo {
+  padding-left: 3rem;
+}
+
 .carousel {
   height: 200px;
   top: 0px;
@@ -43,6 +47,12 @@
 
 .tabs .indicator {
   background-color: #1976d2;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #1976d2;
+  -webkit-box-shadow: 0 1px 0 0 #1976d2;
+          box-shadow: 0 1px 0 0 #1976d2;
 }
 
 html, body {
@@ -539,10 +549,6 @@ body.play ul li.active .down .shadow {
   font-style: normal;
 }
 
-.logo {
-  padding-left: 2rem;
-}
-
 .logo__name {
   font-family: 'tribalcaseregular';
   font-size: 1.6rem;
@@ -558,5 +564,14 @@ body.play ul li.active .down .shadow {
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
+}
+
+.feedback-table {
+  width: 70;
+}
+
+.profile-pic {
+  width: 40px;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=app.css.map */
