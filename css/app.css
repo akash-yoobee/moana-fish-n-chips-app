@@ -1,5 +1,5 @@
 nav .brand-logo {
-  padding-left: 3rem;
+  padding-left: 4rem;
 }
 
 .carousel {
@@ -561,7 +561,6 @@ body.play ul li.active .down .shadow {
 
 .car__discount {
   font-family: 'quesha';
-  font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
 }

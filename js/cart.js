@@ -69,7 +69,7 @@ var app = new Vue({
   data: {
     items: [
       {
-        img: "./images/burger-cart.png",
+        img: "./images/burger-beef.png",
         title: "Beef Burger",
         price: "3",
         id: "beef"
