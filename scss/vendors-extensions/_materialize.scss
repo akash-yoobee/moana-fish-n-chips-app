@@ -19,8 +19,7 @@
 }
 
 .card .card-image img {
-  height: -webkit-fill-available;
-  width: fit-content;
+  width: 100%;
 }
 .card .card-image .card-title {
   padding: 0rem 0rem 0.4rem 0.5rem;
@@ -34,4 +33,16 @@
 .card .card-content .card-title {
   line-height: -1px;
   margin-bottom: -10px;
+}
+
+.tabs .tab a {
+  color: #1976d2;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: #1976d2;
+}
+
+.tabs .indicator {
+  background-color:  #1976d2;
 }

@@ -16,10 +16,7 @@
 }
 
 .card .card-image img {
-  height: -webkit-fill-available;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
 }
 
 .card .card-image .card-title {
@@ -34,6 +31,18 @@
 .card .card-content .card-title {
   line-height: -1px;
   margin-bottom: -10px;
+}
+
+.tabs .tab a {
+  color: #1976d2;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: #1976d2;
+}
+
+.tabs .indicator {
+  background-color: #1976d2;
 }
 
 html, body {
@@ -530,51 +539,6 @@ body.play ul li.active .down .shadow {
   font-style: normal;
 }
 
-.food-card__face__image__description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
-.food-card__face__image__description__name {
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
-  background: 64b5f6;
-  color: #fff;
-  border-radius: 25px/25px;
-}
-
-.food-card__face__image__description__price {
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center;
-  padding: 1.1rem 0.4rem 1.1rem 0.4rem;
-  background: #1976d2;
-  color: #fff;
-  border-radius: 25px;
-}
-
-.food-card__face__image__description__footer {
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 0rem 0rem 0rem 0rem;
-  text-align: left;
-}
-
-.food-card__inside__title {
-  background-color: white;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 999;
-}
-
 .logo {
   padding-left: 2rem;
 }
@@ -591,8 +555,8 @@ body.play ul li.active .down .shadow {
 
 .car__discount {
   font-family: 'quesha';
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 400;
   text-align: center;
 }
 /*# sourceMappingURL=app.css.map */

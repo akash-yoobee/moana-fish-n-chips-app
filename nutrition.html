@@ -5,24 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Moana Fish & Chips</title>
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      crossorigin="anonymous"
-    />
-
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="./vendors/materialize.min.css"
-    />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="./vendors/materialize.min.css" />
     <link rel="stylesheet" href="dist/app.min.css" />
   </head>
 
@@ -30,16 +15,58 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper blue darken-2">
-          <a href="#!" class="brand-logo logo left"
-            ><span class="logo__name">Moana</span>
-            <span class="logo__description"> Fish & Chips</span></a
-          >
+          <a href="#!" class="brand-logo logo left" ><span class="logo__name">Moana</span>
+          <span class="logo__description"> Fish & Chips</span></a>
         </div>
       </nav>
     </div>
 
+  <div class="row">
+    <!-- General info. about nutrition & allergens -->
+    <div class="col s12">
+      <div class="card">
+          <div class="card-image waves-effect waves-light waves-block">
+            <img class="activator" src="./images/nutrition.png">
+          </div>
+          <div class="card-content">
+            <i class="far fa-file-pdf"></i>
+            <span>Download nutrition & allergen information about every item on our menu.</span>
+
+            <span class="card-title activator">Legal Disclaimer
+              <i class="fas fa-ellipsis-v"></i>
+            </span>
+          </div>
+          <!-- Inside the disclaimer -->
+          <div class="card-reveal">
+            <span class="card-title">About Allergens
+              <i class="fas fa-times-circle red-text lighten-5"></i>
+            </span>
+            <p>There is always a risk that allergens can be transferred between products during transport, storage, processing or food preperation. So, Moana Fish & Chips is unable to guarantee that any item sold is free from traces of allergens.</p>
+          </div>
+      </div>
+    </div>
+    <!-- Nutrition & allergen info about the customer's current card contents -->
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <h5>Information about the food in your shopping cart.</h5>
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-width-fixed">
+            <li class="tab">
+              <a href="#tab1">Beef Burger</a>
+            </li>
+            <li class="tab">
+              <a href="#tab2">Fried Chips</a>
+            </li>
+            <li class="tab">
+              <a href="#tab3">Orange juice</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-content">
+          <div id="tab1">
             <!-- Nutrition info. -->
-            <h4>This is the nutritional info. about the food you have added to your cart</h4>
             <p class="flow-text">
                 <table class="striped">
                   <thead>
@@ -92,89 +119,326 @@
                     </tr>
                   </tbody>
                 </table>
-              </p>
-              <!-- Allergen info. -->
-              <p class="flow-text">
-                  <table class="striped responsive-table">
-                    <thead>
-                      <tr>
-                          <th>Allergen</th>
-                          <th>Yes or No</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Gluten</td>
-                        <td>Y</td>
-                      </tr>
-                      <tr>
-                        <td>Egg</td>
-                        <td>Y</td>
-                      </tr>
-                      <tr>
-                        <td>Milk</td>
-                        <td>Y</td>
-                      </tr>
-                      <tr>
-                        <td>Soy</td>
-                        <td>Y</td>
-                      </tr>
-                      <tr>
-                        <td>Fish & Crustaceans</td>
-                        <td>N</td>
-                      </tr>
-                      <tr>
-                        <td>Peanuts</td>
-                        <td>N</td>
-                      </tr>
-                      <tr>
-                        <td>Nuts</td>
-                        <td>N</td>
-                      </tr>
-                      <tr>
-                        <td>Sesame Seeds</td>
-                        <td>Y</td>
-                      </tr>
-                      <tr>
-                        <td>Sulphites</td>
-                        <td>N</td>
-                      </tr>
-                      <tr>
-                        <td>Preservatives</td>
-                        <td>Y</td>
-                      </tr>
-                      <tr>
-                        <td>Flavours</td>
-                        <td>Y</td>
-                      </tr>
-                      <tr>
-                        <td>Colors</td>
-                        <td>Y</td>
-                      </tr>
-                    </tbody>
-                  </table>
-              </p>
-              <!-- Allergen legal disclaimer -->
-              <p class="flow-text green-text">
-                Moana Fish & Chips is unable to guarantee that any item sold is free from traces of allergens.
-              </p>
-
-    <!-- Menu -->
-    <div class="fixed-action-btn toolbar">
-        <a class="btn-floating btn-large blue darken-2">
-          <i class="large material-icons">menu</i>
-        </a>
-        <ul>
-          <li><a  href="./comments.html" class="btn-floating"><i class="fas fa-comments "></i></a></li>
-          <li><a  href="./eco.html" class="btn-floating"><i class="fas fa-recycle "></i></a></li>
-          <li><a  href="./lifestyle.html" class="btn-floating"><i class="fas fa-heartbeat "></i></a></li>
-          <li><a  href="./nutrition.html" class="btn-floating"><i class="fas fa-info "></i></a></li>
-          <li><a  href="./copyright.html" class="btn-floating"><i class="fas fa-copyright "></i></a></li>
-        </ul>
+            </p>
+            <hr>
+            <!-- Allergen info. -->
+            <p class="flow-text">
+                <table class="striped responsive-table">
+                  <thead>
+                    <tr>
+                        <th>Allergens</th>
+                        <th>Yes or No</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Gluten</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Egg</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Milk</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Soy</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Fish & Crustaceans</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Peanuts</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Nuts</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Sesame Seeds</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Sulphites</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Preservatives</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Flavours</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Colors</td>
+                      <td>Y</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </p>
+          </div>
+          <div id="tab2">
+            <!-- Nutrition info. -->
+            <p class="flow-text">
+                <table class="striped">
+                  <thead>
+                    <tr>
+                        <th></th>
+                        <th>Per serve</th>
+                        <th>Per 100 grams</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Energy (kJ)</td>
+                      <td>1600</td>
+                      <td>1270</td>
+                    </tr>
+                    <tr>
+                      <td>Energy (Cal)</td>
+                      <td>398</td>
+                      <td>337</td>
+                    </tr>
+                    <tr>
+                      <td>Protein (g)</td>
+                      <td>4.7</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>Total Fat (g)</td>
+                      <td>21.2</td>
+                      <td>18</td>
+                    </tr>
+                    <tr>
+                      <td>Saturated Fat (g)</td>
+                      <td>2.2</td>
+                      <td>1.9</td>
+                    </tr>
+                    <tr>
+                      <td>Carbohydrate (g)</td>
+                      <td>44.8</td>
+                      <td>38</td>
+                    </tr>
+                    <tr>
+                      <td>Sugars (g)</td>
+                      <td>0.6</td>
+                      <td>0.5</td>
+                    </tr>
+                    <tr>
+                      <td>Sodium (mg)</td>
+                      <td>5.7</td>
+                      <td>430</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </p>
+            <hr>
+            <!-- Allergen info. -->
+            <p class="flow-text">
+                <table class="striped responsive-table">
+                  <thead>
+                    <tr>
+                        <th>Allergens</th>
+                        <th>Yes or No</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Gluten</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Egg</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Milk</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Soy</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Fish & Crustaceans</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Peanuts</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Nuts</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Sesame Seeds</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Sulphites</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Preservatives</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Flavours</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Colors</td>
+                      <td>N</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </p>
+          </div>
+          <div id="tab3">
+            <!-- Nutrition info. -->
+            <p class="flow-text">
+                <table class="striped">
+                  <thead>
+                    <tr>
+                        <th></th>
+                        <th>Per serve</th>
+                        <th>Per 100 grams</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Energy (kJ)</td>
+                      <td>625</td>
+                      <td>196</td>
+                    </tr>
+                    <tr>
+                      <td>Energy (Cal)</td>
+                      <td>149</td>
+                      <td>47</td>
+                    </tr>
+                    <tr>
+                      <td>Protein (g)</td>
+                      <td>2.2</td>
+                      <td>0.7</td>
+                    </tr>
+                    <tr>
+                      <td>Total Fat (g)</td>
+                      <td>0.2</td>
+                      <td>&lt;0.1</td>
+                    </tr>
+                    <tr>
+                      <td>Saturated Fat (g)</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Carbohydrate (g)</td>
+                      <td>31.6</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>Sugars (g)</td>
+                      <td>30.4</td>
+                      <td>9.6</td>
+                    </tr>
+                    <tr>
+                      <td>Sodium (mg)</td>
+                      <td>3</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </p>
+            <hr>
+            <!-- Allergen info. -->
+            <p class="flow-text">
+                <table class="striped responsive-table">
+                  <thead>
+                    <tr>
+                        <th>Allergens</th>
+                        <th>Yes or No</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Gluten</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Egg</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Milk</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Soy</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Fish & Crustaceans</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Peanuts</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Nuts</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Sesame Seeds</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Sulphites</td>
+                      <td>N</td>
+                    </tr>
+                    <tr>
+                      <td>Preservatives</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Flavours</td>
+                      <td>Y</td>
+                    </tr>
+                    <tr>
+                      <td>Colors</td>
+                      <td>Y</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <!-- Bottom floating menu -->
+  <div class="fixed-action-btn toolbar">
+    <a class="btn-floating btn-large blue darken-2">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a href="./comments.html" class="btn-floating"><i class="fas fa-comments"></i></a></li>
+      <li><a href="./nutrition.html" class="btn-floating"><i class="fas fa-info"></i></a></li>
+      <li><a href="./eco.html" class="btn-floating"><i class="fas fa-recycle"></i></a></li>
+      <li><a href="./lifestyle.html" class="btn-floating"><i class="fas fa-heartbeat"></i></a></li>
+      <li><a href="./copyright.html" class="btn-floating"><i class="fas fa-copyright"></i></a></li>
+    </ul>
+  </div>
+  
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
     <script src="js/materialize.min.js"></script>
-
   </body>
 </html>
