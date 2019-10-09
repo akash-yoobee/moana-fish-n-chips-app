@@ -56,7 +56,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 }
 
 html, body {
-  background-color: #eee;
+  background-color: #fff;
   font-family: calibri, sans-serif;
 }
 
@@ -565,12 +565,7 @@ body.play ul li.active .down .shadow {
   text-align: center;
 }
 
-.feedback-table {
-  width: 70;
-}
-
 .profile-pic {
   width: 40px;
-  margin-left: 10px;
 }
 /*# sourceMappingURL=app.css.map */

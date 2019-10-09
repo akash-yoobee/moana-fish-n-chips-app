@@ -7,7 +7,7 @@
     <title>Moana Fish & Chips</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="anonymous" /> -->
     <link type="text/css" rel="stylesheet" href="./vendors/materialize.min.css" />
     <link rel="stylesheet" href="dist/app.min.css" />
   </head>
@@ -24,72 +24,71 @@
 
     <!-- cart -->
     <div id="app">
-        <div id="product">
-          <item v-for="item in items" v-bind:item_data="item"></item>
-        </div>
-        <div id="cart">
-          <div id="head">
-            <h4>Shopping Cart</h4>
-            <div id="price">Price</div>
-            <div id="quantity">Quantity</div>
-            <div id="total">Total</div>
-          </div>
-          <buyitem v-for="buyitem in buyitems" v-bind:buy_data="buyitem"></buyitem>
-          <span v-if="total()"><h4>Sum: $ {{total()}}</h4>
-            <!-- <h4 v-if="total()">Sum: $ {{total()}}</h4> -->
-            <!-- Checkout button -->
-            <!-- Modal trigger -->
-            <a class="waves-effect waves-light btn modal-trigger blue darken-2" href="#modal1">
-            <i class="material-icons left">shopping_cart</i>Check Out</a>
-          </span>
-        </div>
+      <div id="product">
+        <item v-for="item in items" v-bind:item_data="item"></item>
       </div>
-      
-      <template id="product-box">
-        <div class="box">
-          <img :src="item_data.img"/>
-          <i class="fa fa-plus" v-on:click="addItem(item_data)"></i>
-          <h4>{{item_data.title}}</h4>
-          <p>$ {{item_data.price}}</p>
+      <div id="cart">
+        <div id="head">
+          <h4>Shopping Cart</h4>
+          <div id="price">Price</div>
+          <div id="quantity">Quantity</div>
+          <div id="total">Total</div>
         </div>
-      </template>
-      
-      <template id="buy-box">
-        <div class="row">
-          <img :src="buy_data.img"/>
-          <h6>{{buy_data.title}}</h6>
-          <p>$ {{buy_data.price}}</p>
-          <div class="qty-minus" v-on:click="minusQty(buy_data)">-</div>
-          <div class="qty">{{buy_data.qty}}</div>
-          <div class="qty-plus" v-on:click="plusQty(buy_data)">+</div>
-          <div class="del" v-on:click="removeItem(buy_data)">Remove</div>
-          <div class="totalprice">{{buy_data.total}}</div>
-        </div>
-      </template>
-
-      <!-- Modal pop-up info. -->
-      <div id="modal1" class="modal bottom-sheet">
-        <div class="modal-content blue lighten">
-          <h5 class="white-text center-align pulse">Please pay at the counter</h5>
-        </div>
-        <div class="modal-footer blue lighten">
-          <a href="./wait.html" class="modal-close waves-effect btn blue darken-2 white-text pulse"><i class="material-icons left">attach_money</i>OK</a>
-        </div>
+        <buyitem v-for="buyitem in buyitems" v-bind:buy_data="buyitem"></buyitem>
+        <span v-if="total()"><h4>Sum: $ {{total()}}</h4>
+          <!-- Checkout button & modal trigger -->
+          <a class="waves-effect waves-light btn modal-trigger blue darken-2" href="#modal1">
+          <i class="material-icons left">shopping_cart</i>Check Out</a>
+        </span>
       </div>
+    </div>
+      
+    <template id="product-box">
+      <div class="box">
+        <img :src="item_data.img"/>
+        <i class="fa fa-plus" v-on:click="addItem(item_data)"></i>
+        <h4>{{item_data.title}}</h4>
+        <p>$ {{item_data.price}}</p>
+      </div>
+    </template>
+      
+    <template id="buy-box">
+      <div class="row">
+        <img :src="buy_data.img"/>
+        <h6>{{buy_data.title}}</h6>
+        <p>$ {{buy_data.price}}</p>
+        <div class="qty-minus" v-on:click="minusQty(buy_data)">-</div>
+        <div class="qty">{{buy_data.qty}}</div>
+        <div class="qty-plus" v-on:click="plusQty(buy_data)">+</div>
+        <div class="del" v-on:click="removeItem(buy_data)">Remove</div>
+        <div class="totalprice">{{buy_data.total}}</div>
+      </div>
+    </template>
 
-  <!-- Bottom floating menu -->
-  <div class="fixed-action-btn toolbar">
-    <a class="btn-floating btn-large blue darken-2">
-      <i class="large material-icons">menu</i>
-    </a>
-    <ul>
-      <li><a href="./comments.html" class="btn-floating"><i class="fas fa-comments"></i></a></li>
-      <li><a href="./nutrition.html" class="btn-floating"><i class="fas fa-info"></i></a></li>
-      <li><a href="./eco.html" class="btn-floating"><i class="fas fa-recycle"></i></a></li>
-      <li><a href="./lifestyle.html" class="btn-floating"><i class="fas fa-heartbeat"></i></a></li>
-      <li><a href="./copyright.html" class="btn-floating"><i class="fas fa-copyright"></i></a></li>
-    </ul>
-  </div>
+    <!-- Modal pop-up info. -->
+    <div id="modal1" class="modal bottom-sheet">
+      <div class="modal-content blue lighten">
+        <h5 class="white-text center-align pulse">Please pay at the counter</h5>
+      </div>
+      <div class="modal-footer blue lighten">
+        <a href="./wait.html" class="modal-close waves-effect btn blue darken-2 white-text pulse">
+        <i class="material-icons left">attach_money</i>OK</a>
+      </div>
+    </div>
+
+    <!-- Bottom floating menu -->
+    <div class="fixed-action-btn toolbar">
+      <a class="btn-floating btn-large blue darken-2">
+        <i class="large material-icons">menu</i>
+      </a>
+      <ul>
+        <li><a href="./comments.html" class="btn-floating"><i class="fas fa-comments"></i></a></li>
+        <li><a href="./nutrition.html" class="btn-floating"><i class="fas fa-info"></i></a></li>
+        <li><a href="./eco.html" class="btn-floating"><i class="fas fa-recycle"></i></a></li>
+        <li><a href="./lifestyle.html" class="btn-floating"><i class="fas fa-heartbeat"></i></a></li>
+        <li><a href="./copyright.html" class="btn-floating"><i class="fas fa-copyright"></i></a></li>
+      </ul>
+    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js" ></script>
     <script src="js/materialize.min.js"></script>
