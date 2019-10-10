@@ -1,4 +1,5 @@
 // All CSS style rulesets in this file override Materialize's default styling.
+// Every style should have been commented from the begining of the project. It is too late now.
 
 nav .brand-logo {
   padding-left: 4rem;
@@ -54,4 +55,14 @@ nav .brand-logo {
 input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
  border-bottom: 1px solid #1976d2;
  box-shadow: 0 1px 0 0 #1976d2;
+}
+
+// The next 2 styles change how the list of good business practices is formatted in eco.html
+ul:not(.browser-default)>li {
+  list-style-type: square;
+}
+
+ul:not(.browser-default) {
+  // For some reason padding: 0rem, 0rem, 0rem, 1rem; does not work so padding-left had to be used
+  padding-left: 1.8rem;
 }

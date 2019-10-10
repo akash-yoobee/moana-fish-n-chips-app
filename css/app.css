@@ -55,6 +55,14 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
           box-shadow: 0 1px 0 0 #1976d2;
 }
 
+ul:not(.browser-default) > li {
+  list-style-type: square;
+}
+
+ul:not(.browser-default) {
+  padding-left: 1.8rem;
+}
+
 html, body {
   background-color: #fff;
   font-family: calibri, sans-serif;

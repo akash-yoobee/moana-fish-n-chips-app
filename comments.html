@@ -80,11 +80,11 @@
                   </tbody>
                 </table>
               </div>
-              <!-- Trying to make it look like the comments span multiple pages -->
+              <!-- Trying to make it look like the comments span multiple pages with pagination -->
               <div class="card-action">
                 <ul class="pagination">
                   <li class="disabled">
-                    <a href="#!" class="blue-text">
+                    <a href="#!" class="grey-text darken-3">
                       <i class="material-icons">chevron_left</i>
                     </a>
                   </li>
@@ -95,6 +95,9 @@
                     <a href="#!" class="blue-text">2</a>
                   </li>
                   <li class="waves-effect">
+                      <a href="#!" class="blue-text">3</a>
+                    </li>
+                  <li class="waves-effect">
                     <a href="#!" class="blue-text">
                       <i class="material-icons">chevron_right</i>
                     </a>
@@ -103,6 +106,7 @@
               </div>
             </div>
           </div>
+
           <!-- Asking for customer feedback -->
           <div class="col s12">
             <h5>Please tell us how your experience was.</h5>
@@ -121,7 +125,8 @@
               </div>
             </form>
             <div>
-              <input type="submit" value="Submit" class="btn waves-effect blue darken-2" />
+              <!-- Submitting feedback shows customers a modal -->
+              <a class="waves-effect btn modal-trigger blue darken-2" href="#modal1">Submit</a>
             </div>
             <br>
             <br>
@@ -129,6 +134,16 @@
         </div>
       </div>
   </section>
+
+  <!-- Modal pop-up to inform the customer that their feedback will not appear on-screen immediately -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content blue lighten">
+      <h5 class="white-text center-align">Your feedback will appear above after we have checked that it is PG-13 (family friendly).</h5>
+    </div>
+    <div class="modal-footer blue lighten">
+      <a href="#!" class="modal-close waves-effect btn blue darken-2 white-text">OK</a>
+    </div>
+  </div>
 
   <!-- Bottom floating menu -->
   <div class="fixed-action-btn toolbar">
@@ -145,5 +160,6 @@
   </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/comments.js"></script>
   </body>
 </html>
