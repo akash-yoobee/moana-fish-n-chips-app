@@ -74,6 +74,7 @@ html, body {
   background-color: #fff;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: inline-block;
   margin: 0 10px;
   position: relative;
 }
@@ -147,7 +148,6 @@ html, body {
 }
 
 #app #cart #head #total {
-  display: inline-block;
   color: #777777;
   line-height: 40px;
   float: right;
