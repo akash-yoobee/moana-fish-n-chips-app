@@ -56,3 +56,8 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
  box-shadow: 0 1px 0 0 #1976d2;
 }
 
+// needed to properly align the Back & Home icons on the top navbar
+nav .brand-logo i, nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi-"], nav .brand-logo i.material-icons {
+  float: none;
+  margin-right: 15px;
+}

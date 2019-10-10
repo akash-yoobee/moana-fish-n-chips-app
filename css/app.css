@@ -54,6 +54,11 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
           box-shadow: 0 1px 0 0 #1976d2;
 }
 
+nav .brand-logo i, nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi-"], nav .brand-logo i.material-icons {
+  float: none;
+  margin-right: 15px;
+}
+
 html, body {
   background-color: #fff;
   font-family: calibri, sans-serif;
@@ -516,7 +521,7 @@ body.play ul li.before .up {
 
 .logo__description {
   font-family: 'quesha';
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .car__discount {
