@@ -36,7 +36,6 @@ nav .brand-logo {
 }
 
 .card .card-content .card-title {
-  line-height: -1px;
   margin-bottom: -10px;
 }
 
@@ -57,12 +56,3 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
  box-shadow: 0 1px 0 0 #1976d2;
 }
 
-// The next 2 styles change how the list of good business practices is formatted in eco.html
-ul:not(.browser-default)>li {
-  list-style-type: square;
-}
-
-ul:not(.browser-default) {
-  // For some reason padding: 0rem, 0rem, 0rem, 1rem; does not work so padding-left had to be used
-  padding-left: 1.8rem;
-}

@@ -33,7 +33,6 @@ nav .brand-logo {
 }
 
 .card .card-content .card-title {
-  line-height: -1px;
   margin-bottom: -10px;
 }
 
@@ -53,14 +52,6 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   border-bottom: 1px solid #1976d2;
   -webkit-box-shadow: 0 1px 0 0 #1976d2;
           box-shadow: 0 1px 0 0 #1976d2;
-}
-
-ul:not(.browser-default) > li {
-  list-style-type: square;
-}
-
-ul:not(.browser-default) {
-  padding-left: 1.8rem;
 }
 
 html, body {
@@ -241,7 +232,6 @@ html, body {
   text-align: right;
 }
 
-/* Reset */
 a {
   cursor: pointer;
   text-decoration: none;
@@ -264,10 +254,6 @@ ul {
 
 .clearfix:after {
   clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
 }
 
 /* Main */
@@ -471,40 +457,6 @@ body.play ul li.before .up {
     -webkit-transform: rotateX(-90deg);
             transform: rotateX(-90deg);
   }
-}
-
-/* SHADOW */
-body.play ul li.before .up .shadow {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(black));
-  background: linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%);
-  -webkit-animation: show .5s linear both;
-          animation: show .5s linear both;
-}
-
-body.play ul li.active .up .shadow {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(black));
-  background: linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%);
-  -webkit-animation: hide .5s .3s linear both;
-          animation: hide .5s .3s linear both;
-}
-
-/*DOWN*/
-body.play ul li.before .down .shadow {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.1)));
-  background: linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
-  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%);
-  -webkit-animation: show .5s linear both;
-          animation: show .5s linear both;
-}
-
-body.play ul li.active .down .shadow {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.1)));
-  background: linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
-  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%);
-  -webkit-animation: hide .5s .3s linear both;
-          animation: hide .5s .3s linear both;
 }
 
 @-webkit-keyframes show {
