@@ -11,16 +11,15 @@ html, body {
       width: 230px;
       background-color: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      display: inline-block;
+      // display: inline-block;
       margin: 0 10px;
       position: relative;
       img {
-        width: 230px;
+        width: 100%;
       }
       i {
         width: 50px;
         height: 50px;
-        // background: #ED277F;
         background: #1976d2;
         color: #ffffff;
         border-radius: 25px;
@@ -71,7 +70,7 @@ html, body {
         line-height: 40px;
       }
       #total {
-        // display: inline-block;
+        display: inline-block;
         color: #777777;
         line-height: 40px;
         float: right;
