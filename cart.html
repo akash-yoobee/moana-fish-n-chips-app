@@ -39,28 +39,28 @@
           <div id="total">Total</div>
         </div>
         <buyitem v-for="buyitem in buyitems" v-bind:buy_data="buyitem"></buyitem>
-        <span v-if="total()"><h4>Sum: $ {{total()}}</h4>
+        <span v-if="total()"><h4>Please pay ${{total()}} at the counter</h4>
           <!-- Checkout button & modal trigger -->
           <a class="waves-effect waves-light btn modal-trigger blue darken-2" href="#modal1">
           <i class="material-icons left">shopping_cart</i>Check Out</a>
         </span>
       </div>
     </div>
-      
+    
+    <!-- Item rectangle with picture, name, price and plus sign -->
     <template id="product-box">
       <div class="box">
         <img :src="item_data.img"/>
         <i class="fa fa-plus" v-on:click="addItem(item_data)"></i>
-        <h4>{{item_data.title}}</h4>
-        <p>$ {{item_data.price}}</p>
+        <span>{{item_data.title}}</span>
+        <span>$ {{item_data.price}}</span>
       </div>
     </template>
       
     <template id="buy-box">
       <div class="row">
-        <img :src="buy_data.img"/>
-        <h6>{{buy_data.title}}</h6>
-        <p>$ {{buy_data.price}}</p>
+        <!-- <img :src="buy_data.img"/> -->
+        <p>{{buy_data.title}} ${{buy_data.price}}</p>
         <div class="qty-minus" v-on:click="minusQty(buy_data)">-</div>
         <div class="qty">{{buy_data.qty}}</div>
         <div class="qty-plus" v-on:click="plusQty(buy_data)">+</div>
@@ -97,6 +97,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js" ></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/food-info.js"></script>
-    <script src="js/cart.js"></script>
+    <script src="js/cart-old.js"></script>
     </body>
 </html>
