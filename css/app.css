@@ -78,13 +78,12 @@ nav .brand-logo i, nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi
 }
 
 .foodname {
-  font-size: 2.5em !important;
-  font-weight: 600;
+  font-size: 1.6em !important;
 }
 
 .foodprice {
   line-height: 4em !important;
-  font-size: 1.5em !important;
+  font-size: 1.2em !important;
   font-weight: 600 !important;
 }
 
@@ -199,7 +198,7 @@ nav .brand-logo i, nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi
 }
 
 .shoppingcartrow__del {
-  background: #f44336;
+  background: #ef5350;
   color: #FFFFFF;
   width: 6em;
   height: 1.5em;
