@@ -25,60 +25,80 @@
           </div>
         </nav>
     </div>
-
-    <!-- cart -->
-    <div id="app">
-      <div id="product">
-        <item v-for="item in items" v-bind:item_data="item"></item>
-      </div>
-      <div id="cart">
-        <div id="head">
-          <h4>Shopping Cart</h4>
-          <div id="price">Price</div>
-          <div id="quantity">Quantity</div>
-          <div id="total">Total</div>
+    
+    <div class="row">
+      <!-- Horizontal cards with food picture, name, price and plus sign -->
+      <template id="product-box">
+        <div class="col s12">
+          <div class="card horizontal box">
+            <div class="card-image">
+              <!-- Image of the food item -->
+              <img :src="item_data.img"/>
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <!-- Name of the food item -->
+                <span class="card-title foodname">{{item_data.title}}</span>
+                <!-- Price of the food item -->
+                <p class="card-title foodprice">${{item_data.price}}</p>
+                <!-- A PLUS sign that lets you add the food item to the shopping cart -->
+                <div id="product">
+                  <i class="fa fa-plus" v-on:click="addItem(item_data)"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <buyitem v-for="buyitem in buyitems" v-bind:buy_data="buyitem"></buyitem>
-        <span v-if="total()"><h4>Please pay ${{total()}} at the counter</h4>
-          <!-- Checkout button & modal trigger -->
-          <a class="waves-effect waves-light btn modal-trigger blue darken-2" href="#modal1">
-          <i class="material-icons left">shopping_cart</i>Check Out</a>
-        </span>
+      </template>
+      <!-- The top part of the shopping cart -->
+      <div class="col s12">
+        <table>
+          <tbody>
+            <template id="buy-box">
+              <tr class="shoppingcartrow">
+                <!-- Name and price -->
+                <td class="shoppingcartrow__nameandprice">{{buy_data.title}} ${{buy_data.price}}</td>
+                <!-- Change quantity -->
+                <td class="shoppingcartrow__changequantity">
+                  <span class="shoppingcartrow__changequantity__qty-minus" v-on:click="minusQty(buy_data)">-</span>
+                  <span class="shoppingcartrow__changequantity__qty">{{buy_data.qty}}</span>
+                  <span class="shoppingcartrow__changequantity__qty-plus" v-on:click="plusQty(buy_data)">+</span>
+                </td>
+                <!-- Remove button -->
+                <td>
+                  <div class="shoppingcartrow__del" v-on:click="removeItem(buy_data)">Remove</div>
+                </td>
+                <!-- Total price -->
+                <td><div class="shoppingcartrow__totalprice">${{buy_data.total}}</div></td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
       </div>
     </div>
-    
-    <!-- Item rectangle with picture, name, price and plus sign -->
-    <template id="product-box">
-      <div class="box">
-        <img :src="item_data.img"/>
-        <i class="fa fa-plus" v-on:click="addItem(item_data)"></i>
-        <span>{{item_data.title}}</span>
-        <span>$ {{item_data.price}}</span>
-      </div>
-    </template>
-      
-    <template id="buy-box">
-      <div class="row">
-        <!-- <img :src="buy_data.img"/> -->
-        <p>{{buy_data.title}} ${{buy_data.price}}</p>
-        <div class="qty-minus" v-on:click="minusQty(buy_data)">-</div>
-        <div class="qty">{{buy_data.qty}}</div>
-        <div class="qty-plus" v-on:click="plusQty(buy_data)">+</div>
-        <div class="del" v-on:click="removeItem(buy_data)">Remove</div>
-        <div class="totalprice">{{buy_data.total}}</div>
-      </div>
-    </template>
 
+    <!-- Bottom part of the shopping cart -->
+    <div id="app">
+      <item v-for="item in items" v-bind:item_data="item"></item>
+      <buyitem v-for="buyitem in buyitems" v-bind:buy_data="buyitem"></buyitem>
+      <span v-if="total()"><h4>Please pay ${{total()}} at the counter</h4>
+        <!-- Checkout button & modal trigger -->
+        <a class="waves-effect waves-light btn modal-trigger blue darken-2" href="#modal1">
+        <i class="material-icons left">shopping_cart</i>Check Out</a>
+      </span>
+    </div>
+      
     <!-- Modal pop-up info. -->
     <div id="modal1" class="modal bottom-sheet">
       <div class="modal-content blue lighten">
-        <h5 class="white-text center-align pulse">Please pay at the counter</h5>
+      <h5 class="white-text center-align pulse">Please pay at the counter</h5>
       </div>
       <div class="modal-footer blue lighten">
         <a href="./wait.html" class="modal-close waves-effect btn blue darken-2 white-text pulse">
         <i class="material-icons left">attach_money</i>OK</a>
       </div>
     </div>
+    <br><br><br>
 
     <!-- Bottom floating menu -->
     <div class="fixed-action-btn toolbar">
@@ -93,10 +113,11 @@
         <li><a href="./copyright.html" class="btn-floating"><i class="fas fa-copyright"></i></a></li>
       </ul>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js" ></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/food-info.js"></script>
-    <script src="js/cart-old.js"></script>
+    <script src="js/cart.js"></script>
     </body>
 </html>

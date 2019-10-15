@@ -1,4 +1,6 @@
 var beefClick = 0;
+var wedgesClick = 0;
+var drinkClick = 0;
 
 Vue.component("item", {
   template: "#product-box",
@@ -15,8 +17,26 @@ Vue.component("item", {
           this.$parent.buyitems[i].total = this.$parent.buyitems[i].qty*this.$parent.buyitems[i].price;
           console.log(i);
         }
-      } 
-      console.log(beefClick);
+      } else if (item_data.id == "wedges") {
+        wedgesClick += 1;
+        if (wedgesClick <= 1) {
+          this.pushData();
+        } else {
+          var i = this.findIndex(this.$parent.buyitems, "id", "wedges");
+          this.$parent.buyitems[i].qty += 1;
+          this.$parent.buyitems[i].total =this.$parent.buyitems[i].qty*this.$parent.buyitems[i].price;
+        }
+      } else {
+        drinkClick += 1;
+        if (drinkClick <= 1) {
+          this.pushData();
+        } else {
+          var i = this.findIndex(this.$parent.buyitems, "id", "health-drink");
+          this.$parent.buyitems[i].qty += 1;
+          this.$parent.buyitems[i].total = this.$parent.buyitems[i].qty*this.$parent.buyitems[i].price;
+        }
+      }
+      console.log(beefClick, wedgesClick, drinkClick);
     },
     pushData: function() {
       this.$parent.buyitems.push({
@@ -47,7 +67,11 @@ Vue.component("buyitem", {
       this.$parent.buyitems.splice(index, 1);
       if (buy_data.id == "beef") {
         beefClick = 0;
-      } 
+      } else if (buy_data.id == "wedges") {
+        wedgesClick = 0;
+      } else {
+        drinkClick = 0;
+      }
     },
     plusQty: function(buy_data){
       buy_data.qty += 1;
@@ -74,6 +98,18 @@ var app = new Vue({
         price: "3",
         id: "beef"
       },
+      {
+        img: "./images/sides-wedges.png",
+        title: "Wedges",
+        price: "1",
+        id: "wedges"
+      },
+      {
+        img: "./images/drinks-healthy.png",
+        title: "Health Drink",
+        price: "1.25",
+        id: "health-drink"
+      }
     ],
     buyitems: []
   },
@@ -81,7 +117,7 @@ var app = new Vue({
     total: function(){
       var sum = 0;
       this.buyitems.forEach(function(buyitem){
-            sum += parseInt(buyitem.total);
+          sum += parseInt(buyitem.total);
       });
       return sum;
     }

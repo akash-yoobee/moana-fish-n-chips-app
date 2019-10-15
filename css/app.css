@@ -60,152 +60,181 @@ nav .brand-logo i, nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi
 }
 
 #app {
-  width: 100%;
-  margin: 20px auto;
+  padding: 0 .75rem;
 }
 
-#app #product .box {
-  width: 100%;
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin: 0 10px;
-}
-
-#app #product .box img {
-  width: 50%;
-  position: relative;
-}
-
-#app #product .box i {
-  width: 50px;
-  height: 50px;
+#app #product i {
+  width: 2.5em;
+  height: 2.5em;
   background: #1976d2;
   color: #ffffff;
   border-radius: 25px;
   text-align: center;
-  line-height: 50px;
+  line-height: 2.5em;
   font-size: 1.4rem;
   position: absolute;
-  right: 1em;
-  bottom: 1em;
-  -webkit-box-shadow: 0 0 4px 2px rgba(80, 80, 80, 0.1);
-          box-shadow: 0 0 4px 2px rgba(80, 80, 80, 0.1);
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  right: 10%;
+  bottom: 20%;
 }
 
-#app #product .box i:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.foodname {
+  font-size: 2.5em !important;
+  font-weight: 600;
 }
 
-#app #product .box span {
-  margin-left: 20px;
+.foodprice {
+  line-height: 4em !important;
+  font-size: 1.5em !important;
+  font-weight: 600 !important;
 }
 
-#app #product .box p {
-  margin-left: 20px;
+.shoppingcartrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-#app #cart {
-  margin-top: 50px;
-}
-
-#app #cart #head {
-  width: 100%;
-  border-bottom: 1px solid #BFBFBF;
-  height: 40px;
-  display: block;
-}
-
-#app #cart #head #price {
-  display: inline-block;
-  width: 80px;
-  margin-left: 35px;
-  line-height: 40px;
-}
-
-#app #cart #head #quantity {
-  display: inline-block;
-  margin-left: 100px;
-  line-height: 40px;
-}
-
-#app #cart #head #total {
-  display: inline-block;
-  line-height: 40px;
-  float: right;
-}
-
-#app #cart .row {
-  width: 100%;
-  border-bottom: 1px solid #BFBFBF;
-  overflow: hidden;
-  padding: 10px 0;
-  display: block;
-  float: left;
-}
-
-#app #cart .row p {
-  float: left;
-  margin: 0;
-  width: 80px;
-  line-height: 100px;
-  margin-left: 35px;
-  text-align: center;
+.shoppingcartrow__nameandprice {
+  width: 5em;
+  height: 2em;
+  margin-right: 2em;
+  font-size: 1em;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   white-space: nowrap;
 }
 
-#app #cart .row .qty-minus {
-  float: left;
-  width: 20px;
-  line-height: 100px;
-  margin-left: 60px;
-  text-align: center;
-  cursor: pointer;
+.shoppingcartrow__changequantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
-#app #cart .row .qty {
-  float: left;
-  width: 20px;
-  line-height: 100px;
-  margin-left: 20px;
-  text-align: center;
+.shoppingcartrow__changequantity__qty-minus {
+  font-size: 1em;
+  font-weight: 900;
+  background: #1976d2;
+  width: 1.5em;
+  height: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #1565c0;
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 2em;
+  border-radius: 2px;
 }
 
-#app #cart .row .qty-plus {
-  float: left;
-  width: 20px;
-  line-height: 100px;
-  margin-left: 20px;
-  text-align: center;
-  cursor: pointer;
+.shoppingcartrow__changequantity__qty {
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#app #cart .row .del {
-  float: left;
-  width: 80px;
-  line-height: 100px;
-  margin-left: 60px;
-  cursor: pointer;
-  text-decoration: underline;
-  color: #ED277F;
+.shoppingcartrow__changequantity__qty-plus {
+  font-size: 1em;
+  font-weight: 900;
+  background: #1976d2;
+  width: 1.5em;
+  height: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #1565c0;
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
 }
 
-#app #cart .row .totalprice {
-  float: left;
-  width: 80px;
-  line-height: 100px;
-  margin-left: 10px;
-  text-align: center;
+.shoppingcartrow__del {
+  background: #f44336;
+  color: #FFFFFF;
+  width: 6em;
+  height: 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
 }
 
-#app #cart h5 {
-  font-size: 1.2rem;
-  text-align: right;
+.shoppingcartrow__totalprice {
+  width: 3em;
+  height: 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background-color: #f5f5f5;
 }
 
 a {
