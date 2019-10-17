@@ -87,6 +87,10 @@ nav .brand-logo i, nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi
   font-weight: 600 !important;
 }
 
+.good-colour {
+  background-color: #19d275;
+}
+
 .shoppingcartrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,6 +161,7 @@ nav .brand-logo i, nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi
           box-sizing: border-box;
   margin-left: 2em;
   border-radius: 2px;
+  padding-bottom: 0.2em;
 }
 
 .shoppingcartrow__changequantity__qty {
@@ -198,7 +203,7 @@ nav .brand-logo i, nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi
 }
 
 .shoppingcartrow__del {
-  background: #ef5350;
+  background: #d21947;
   color: #FFFFFF;
   width: 6em;
   height: 1.5em;

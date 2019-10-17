@@ -29,6 +29,9 @@
     font-size: 1.2em!important;
     font-weight: 600!important;
   }
+  .good-colour{
+background-color: #19d275;
+  }
   .shoppingcartrow{
     display: flex;
     justify-content: flex-start;
@@ -66,6 +69,7 @@
         box-sizing: border-box;
         margin-left: 2em;
         border-radius: 2px;
+        padding-bottom: 0.2em;
       }
       &__qty {
         width: 1.5em;
@@ -92,7 +96,7 @@
         }
 }
   &__del {
-    background: #ef5350;
+    background: #d21947;
     color: #FFFFFF;
     width: 6em;
     height: 1.5em;
