@@ -537,4 +537,75 @@ body.play ul li.before .up {
 .profile-pic {
   width: 40px;
 }
+
+.copyright__attributions__counters {
+  background: #19d275;
+  text-align: center;
+  margin: 0em 0em 0.8em 0em;
+  font-family: "quesha";
+  font-size: 1.9rem;
+  counter-reset: counter-name;
+  border-radius: 3px;
+}
+
+.copyright__attributions__counters__landingpage {
+  background: #19d275;
+  text-align: center;
+  margin: 0.25em 0.25em 0em 0.25em;
+  font-family: "quesha";
+  font-size: 1.9rem;
+  border-radius: 3px;
+}
+
+.copyright__attributions__counters__landingpage__link {
+  color: black;
+}
+
+.copyright__attributions__counters__new-attribution {
+  position: relative;
+  padding: 0em 0em 0em 1.7em;
+  font-size: 0.9rem;
+}
+
+.copyright__attributions__counters__new-attribution::before {
+  counter-increment: counter-name;
+  content: counter(counter-name);
+  position: absolute;
+  left: 0em;
+  top: 0.2em;
+  width: 1.9em;
+  height: 1.9em;
+  font-size: 0.6rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #c8e6c9;
+  border: 1px solid #1b5e20;
+  color: #1b5e20;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.copyright__attributions__counters__list {
+  margin: 0em 0em 0em 3em;
+  text-indent: -1em;
+}
+
+.copyright__attributions__counters__reference-list {
+  line-height: 2em;
+  text-indent: -5em;
+  padding: 0em 0em 0em 6em;
+  font-size: 0.9rem;
+}
+
+.copyright__attributions__counters__reference-list__italicized-title {
+  font-style: italic;
+}
 /*# sourceMappingURL=app.css.map */

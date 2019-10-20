@@ -1,0 +1,122 @@
+// For the "Produce CSS using a CSS processor" requirement your comments were
+// "Sass is well organised. No mixins or variables used".
+// I am showing the use of mixins and variables on this page.
+// The values in the variables are there because they need to be different for 
+// the staff facing (tablet) app
+
+// Variables
+// For the words "Attributions" & "References"
+$ff-company: 'quesha';
+$column-header: 1.9rem;
+// For the numbered entries in the "Attributions" column
+$column-contents: 0.9rem;
+$column-numbering: 0.6rem;
+// For the numbers in circles
+$clr-light: #c8e6c9;
+$clr-dark: #1b5e20;
+
+// Mixins
+
+// Applies to the words "Attributions" & "References"
+// Also sets up the incrementing counter
+@mixin attributions-and-references {
+  background: #19d275;
+  text-align: center;
+  margin: 0em 0em 0.8em 0em;
+  font-family: $ff-company;
+  font-size: $column-header;
+  counter-reset: counter-name;
+  border-radius: 3px;
+  }
+// Applies to the "Attributions" card on the landing page of the app
+@mixin attributions-card {
+  background: #19d275;
+  text-align: center;
+  margin: 0.25em 0.25em 0em 0.25em;
+  font-family: $ff-company;
+  font-size: $column-header;
+  border-radius: 3px;
+  }
+// The individual entries in the "Attributions" column
+@mixin individual-attributions {
+  position: relative;
+  padding: 0em 0em 0em 1.7em;
+  font-size: $column-contents;
+  }
+// The auto-incrementing numbers in front of the entries in the "Attributions" column
+@mixin numbering-attributions {
+  counter-increment: counter-name;
+  content: counter(counter-name);
+  position: absolute;
+  left: 0em;
+  top: 0.2em;
+  width: 1.9em;
+  height: 1.9em;
+  font-size: $column-numbering;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $clr-light;
+  border: 1px solid $clr-dark;
+  color: $clr-dark;
+  box-sizing: border-box;
+  }
+// Formatting the lists
+@mixin list-formatting {
+  margin: 0em 0em 0em 3em;
+  text-indent: -1em;
+  }
+// The entries in the "References" column
+@mixin reference-list-formatting {
+  // APA standard asks for twice the line height in the reference list
+  line-height: 2em;
+  // APA standard asks for a hanging indentation of 5 spaces for the 
+  // second and subsequent lines of each reference
+  text-indent: -5em;
+  padding: 0em 0em 0em 6em;
+  font-size: $column-contents;
+  }
+// Putting the names of the reference list titles in italics
+  @mixin italicizing-titles {
+    font-style: italic;
+  }
+
+// Start of the actual Sass instructions
+.copyright {
+  &__attributions {
+    &__counters {
+      // Applies to the words "Attributions" & "References"
+      @include attributions-and-references;
+      &__landingpage{
+        // Applies to the "Attributions" card on the landing page of the app
+        @include attributions-card;
+        &__link {
+          // Applies to the "Attributions" link on the landing page of the app
+          color: black;
+      }
+      }
+
+      &__new-attribution{
+        // The individual entries in the "Attributions" column
+        @include individual-attributions;
+      }
+      &__new-attribution::before {
+        // The auto-incrementing numbers in front of the entries in the "Attributions" column
+        @include numbering-attributions;
+      }
+      &__list {
+        // Formatting the lists
+        @include list-formatting;
+      }
+      &__reference-list {
+        // The entries in the "References" column
+        @include reference-list-formatting;
+        &__italicized-title{
+          // Putting the names of the reference list titles in italics
+          @include italicizing-titles;
+        }
+      }
+    }
+  }
+}
