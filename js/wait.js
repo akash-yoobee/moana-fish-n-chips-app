@@ -1,3 +1,5 @@
+// A modified version of Pen Countdown Clock by Adem ilter from https://codepen.io/ademilter/pen/czIGo
+
 setInterval(function () {
   secondPlay()
 }, 3000);

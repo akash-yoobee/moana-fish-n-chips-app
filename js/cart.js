@@ -1,3 +1,5 @@
+// A modified version of Vue.js - shopping cart by chenchen from https://codepen.io/qq7886/pen/zBGrwq
+
 var beefClick = 0;
 var wedgesClick = 0;
 var drinkClick = 0;

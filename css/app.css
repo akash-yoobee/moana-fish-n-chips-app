@@ -538,6 +538,35 @@ body.play ul li.before .up {
   width: 40px;
 }
 
+.modal-ok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-lists {
+  margin: 0em 0em 0em 0.5em;
+  text-indent: -0.5em;
+}
+
+.info-list-heading {
+  font-size: 1.25em;
+  text-align: center;
+  margin: 0em 0em 0.8em 0em;
+}
+
+.indicator-parent__page-indicator {
+  font-size: 2rem;
+  margin: 1rem 1.5rem 0rem 0rem;
+  float: right;
+}
+
 .copyright__attributions__counters {
   background: #19d275;
   text-align: center;

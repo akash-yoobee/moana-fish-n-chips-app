@@ -1,0 +1,8 @@
+// Makes the "OK" buttons in the shoppingcart and the feedback/comments page
+// appear centered on screen
+
+.modal-ok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

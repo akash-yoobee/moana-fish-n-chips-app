@@ -1,0 +1,10 @@
+// Displays a small circle with an icon representing the page the user is 
+// currently viewing, on the top right hand corner of the screen.
+
+.indicator-parent {
+  &__page-indicator {  
+  font-size: 2rem;
+  margin: 1rem 1.5rem 0rem 0rem ;
+  float: right;
+  }
+}
